@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Gym.Model.Activity" table="ACTIVITY">
+		<id name="id">
+		<column name="ID" sql-type="BIGINT"/>
+			<generator class="increment"/>
+		</id>
+		<property name="username">
+			<column name="USERNAME" sql-type="varchar(1024)"/>
+		</property>
+		<property name="exercise">
+			<column name="EXERCISE" sql-type="varchar(1024)"/>
+		</property>
+		<property name="muscle">
+			<column name="MUSCLE" sql-type="varchar(1024)"/>
+		</property>
+		<property name="sets">
+			<column name="SETS" sql-type="BIGINT"/>
+		</property>
+		<property name="repetition">
+			<column name="REPETITION" sql-type="BIGINT"/>
+		</property>
+		<property name="weight">
+			<column name="WEIGHT" sql-type="BIGINT"/>
+		</property>
+		<property name="running_time">
+			<column name="RUNNINGTIME" sql-type="BIGINT"/>
+		</property>
+		<property name="Avg_speed">
+			<column name="AVGSPEED" sql-type="BIGINT"/>
+		</property>
+		<property name="date">
+			<column name="DATE" sql-type="varchar(1024)"/>
+		</property>
+	</class>
+</hibernate-mapping>

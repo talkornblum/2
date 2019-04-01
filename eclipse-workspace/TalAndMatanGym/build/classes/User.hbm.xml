@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="Gym.Model.User" table="users"  >
+		<id name="id">
+			<column unique="true" name="id" sql-type="BIGINT"/>
+			<generator class="increment"/>
+		</id>
+		<property name="username">
+			<column name="username" sql-type="varchar(1024)" length="1024"/>
+		</property>
+		<property name="password">
+			<column name="password" sql-type="varchar(1024)"  length="1024"/>
+		</property>
+
+	</class>
+</hibernate-mapping>
